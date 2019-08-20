@@ -30,4 +30,4 @@ require (
 	sigs.k8s.io/yaml v1.1.0 // indirect
 )
 
-replace github.com/hashicorp/aws-sdk-go-base => github.com/bdwyertech/aws-sdk-go-base v0.3.0-updated-aws-sdk
+replace github.com/hashicorp/aws-sdk-go-base => github.com/bdwyertech/aws-sdk-go-base v0.3.0-updated-aws-sdk-yak
