@@ -1,7 +1,7 @@
 module github.com/terraform-providers/terraform-provider-aws
 
 require (
-	github.com/aws/aws-sdk-go v1.23.4
+	github.com/aws/aws-sdk-go v1.23.11
 	github.com/beevik/etree v1.1.0
 	github.com/bflad/tfproviderlint v0.4.0
 	github.com/client9/misspell v0.3.4
@@ -30,4 +30,5 @@ require (
 	sigs.k8s.io/yaml v1.1.0 // indirect
 )
 
-replace github.com/hashicorp/aws-sdk-go-base => github.com/bdwyertech/aws-sdk-go-base v0.3.0-updated-aws-sdk-yak.0.20190820040609-c64286f019ab
+// replace github.com/hashicorp/aws-sdk-go-base => github.com/bdwyertech/aws-sdk-go-base v0.3.0-updated-aws-sdk-yak.0.20190820040609-c64286f019ab
+replace github.com/hashicorp/aws-sdk-go-base => github.com/bdwyertech/aws-sdk-go-base v0.3.0-updated-aws-sdk-yak.0.20190828235749-1e7baa579902
