@@ -6,7 +6,7 @@ import (
 
 	"github.com/hashicorp/terraform/helper/schema"
 	"github.com/hashicorp/terraform/helper/validation"
-	"github.com/kubernetes-sigs/aws-iam-authenticator/pkg/token"
+	"sigs.k8s.io/aws-iam-authenticator/pkg/token"
 )
 
 func dataSourceAwsEksClusterAuth() *schema.Resource {
@@ -32,7 +32,7 @@ func dataSourceAwsEksClusterAuth() *schema.Resource {
 func dataSourceAwsEksClusterAuthRead(d *schema.ResourceData, meta interface{}) error {
 	conn := meta.(*AWSClient).stsconn
 	name := d.Get("name").(string)
-	generator, err := token.NewGenerator(false)
+	generator, err := token.NewGenerator(true, false)
 	if err != nil {
 		return fmt.Errorf("error getting token generator: %v", err)
 	}

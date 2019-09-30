@@ -6,7 +6,7 @@ import (
 
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
-	"github.com/kubernetes-sigs/aws-iam-authenticator/pkg/token"
+	"sigs.k8s.io/aws-iam-authenticator/pkg/token"
 )
 
 func TestAccAWSEksClusterAuthDataSource_basic(t *testing.T) {
